@@ -4,7 +4,8 @@ var base = require('@jupyter-widgets/base');
 const coreutils = require("@jupyterlab/coreutils");
 
 const base_url = coreutils.PageConfig.getBaseUrl();
-window.j2sPath = base_url + "nbextensions/jupyter-jsmol/jsmol/j2s";
+// window.j2sPath = base_url + "nbextensions/jupyter-jsmol/jsmol/j2s";
+window.j2sPath = base_url + "lab/extensions/jupyter-jsmol/jsmol/j2s";
 
 module.exports = {
   id: 'jupyter-jsmol:plugin',
@@ -17,7 +18,8 @@ module.exports = {
       });
       // Workaround for importing the JSmol
       const script = document.createElement('script');
-      script.src = base_url + 'nbextensions/jupyter-jsmol/jsmol/JSmol.min.js';
+      // script.src = base_url + 'nbextensions/jupyter-jsmol/jsmol/JSmol.min.js';
+      script.src = base_url + 'lab/extensions/jupyter-jsmol/jsmol/JSmol.min.js';
       script.async = false;
       document.querySelector('head').appendChild(script);
   },

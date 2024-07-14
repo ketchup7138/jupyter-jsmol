@@ -15,7 +15,8 @@ if (window.require) {
     window.require.config({
         map: {
             "*" : {
-                "jupyter-jsmol": "nbextensions/jupyter-jsmol/index",
+                // "jupyter-jsmol": "nbextensions/jupyter-jsmol/index",
+                "jupyter-jsmol": "lab/extensions/jupyter-jsmol/index",
             }
         }
     });
